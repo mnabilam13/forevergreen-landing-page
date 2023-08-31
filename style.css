@@ -1,0 +1,121 @@
+@font-face {
+    font-family: lemon;
+    src: url(./fonts/LEMONMILK-Regular.otf);
+}
+@font-face {
+    font-family: codec;
+    src: url(./fonts/CodecPro-Regular.ttf);
+}
+
+body{
+    background-color: #D3FFE2;
+}
+h1{
+    font-family: lemon;
+    font-size: 6rem;
+    color: #1C342C;
+    text-align: center;
+    margin:10px 0px 0px 0px;
+}
+.header p{
+    font-family: codec;
+    font-size: 2.5rem;
+    text-align: center;
+    margin:0px
+    
+}
+h2{
+    font-family: codec;
+    font-weight: 550;
+    font-size: 3rem;
+    text-align: center;
+}
+h2 .brand{
+    font-family: lemon;
+}
+.about{
+    margin: 100px 0px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: #1C342C;
+    color: #A9CD9E;
+    width: 700px;
+}
+.box p{
+    font-family: codec;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0px 45px;
+    margin:20px 0px;
+}
+.features{
+    padding-top: 10px;
+}
+.flex-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.problem{
+    background-color: #1C342C;
+    width: 500px;
+    height: 270px;
+    color: #A9CD9E;
+}
+.solution{
+    background-color: #5DBB5D;
+    width: 500px;
+    height: 270px;
+    color: #1C342C;
+}
+h3{
+    font-family: lemon;
+    font-size: 1.5rem;
+    color: white;
+    padding: 3% 0px 0px 3%;
+    margin: 10px 0px;
+}
+ul{
+    padding-left: 10px;
+}
+li{
+    font-family: codec;
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 20px;
+}
+.daun{
+    width: 30px;
+    float: left;
+}
+footer h2{
+    font-family: lemon;
+    font-size: 5rem;
+    margin-bottom: 0px;
+    color: #1C342C;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact li{
+    font-size: 2.5rem;
+}
+.contact img{
+    width: 50px;
+    float: left;
+}
+.white{
+    color: #FFFFFF;
+}
+.green{
+    color: #5DBB5D;
+}
