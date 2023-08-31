@@ -119,7 +119,7 @@ footer{
 .green{
     color: #5DBB5D;
 }
-@media(max-width:500px){
+@media(max-width:800px){
     h1{
         word-wrap: break-word;
     }
