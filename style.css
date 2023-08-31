@@ -54,7 +54,7 @@ h2 .brand{
     margin:20px 0px;
 }
 .features{
-    padding-top: 10px;
+    padding-top: 1%;
 }
 .flex-2{
     display: flex;
@@ -65,13 +65,13 @@ h2 .brand{
 .problem{
     background-color: #1C342C;
     width: 500px;
-    height: 270px;
+    height: auto;
     color: #A9CD9E;
 }
 .solution{
     background-color: #5DBB5D;
     width: 500px;
-    height: 270px;
+    height: auto;
     color: #1C342C;
 }
 h3{
@@ -118,4 +118,23 @@ footer{
 }
 .green{
     color: #5DBB5D;
+}
+@media(max-width:800px){
+    h1{
+        word-wrap: break-word;
+    }
+    .flex-2{
+        flex-direction: column;
+    }
+    footer h2{
+        font-size: 4rem;
+    }
+    .contact li{
+        font-size: 1.5rem;
+    }
+    .contact img{
+        width: 30px;
+    }
+    
+
 }
