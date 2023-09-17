@@ -1,140 +1,291 @@
 @font-face {
-    font-family: lemon;
-    src: url(./fonts/LEMONMILK-Regular.otf);
+  font-family: lemon;
+  src: url(./fonts/LEMONMILK-Regular.otf);
 }
 @font-face {
-    font-family: codec;
-    src: url(./fonts/CodecPro-Regular.ttf);
+  font-family: codec;
+  src: url(./fonts/CodecPro-Regular.ttf);
+}
+@font-face {
+  font-family: codecLight;
+  src: url(./fonts/CodecPro-Light.ttf);
+}
+@font-face {
+  font-family: lemonLight;
+  src: url(./fonts/LEMONMILK-Light.otf);
 }
 
-body{
-    background-color: #D3FFE2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: lemon;
+  background: transparent;
 }
-h1{
-    font-family: lemon;
+
+body {
+  background-color: #d3ffe2;
+}
+
+.background {
+  background-image: url(./img/tree.png);
+  background-size: cover;
+}
+
+span {
+  color: #5dbb5d;
+}
+
+header {
+  padding: 4rem 0;
+}
+
+header h1 {
+  font-size: 9rem;
+  color: #1c342c;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: -0.4rem;
+}
+
+header .typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+header .typewriter .typing-animation,
+header .typewriter .typing-animation span {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: codec;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  line-height: 0.9;
+  width: 0;
+  animation: typing 8s steps(80, end) infinite;
+  -webkit-animation: typing 8s steps(80, end) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+main {
+  padding: 6rem 7%;
+}
+
+main .content {
+  padding: 0 28%;
+}
+
+main .content .title-content {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.1rem;
+}
+
+main .content .title-content p {
+  font-family: codec;
+}
+
+main .content .title-content h3,
+main .content .title-content span {
+  letter-spacing: -0.1rem;
+  font-size: 3rem;
+  font-family: lemonlight;
+}
+
+main .content .defenition-content {
+  text-align: center;
+  color: #a9cd9e;
+  background-color: #1c342c;
+  padding: 1rem 0;
+  letter-spacing: -0.1rem;
+  margin-top: 1rem;
+}
+
+main .content .defenition-content p,
+main .content .defenition-content span {
+  font-family: codecLight;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+
+main .content .defenition-content span {
+  color: #ffff;
+  margin: 0;
+}
+
+main .features {
+  margin-top: 8rem;
+}
+
+main .features p {
+  text-align: center;
+  font-family: codec;
+  font-size: 3rem;
+}
+
+main .features .features-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+main .features .features-title h3,
+main .features .features-title span {
+  font-family: lemonLight;
+  letter-spacing: -0.1rem;
+}
+
+main .features .features-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 2rem;
+}
+
+main .features .features-wrapper .features-box {
+  padding: 2rem 3%;
+}
+
+main .features .features-wrapper .features-box h3 {
+  color: #eaeaea;
+  font-family: lemonLight;
+  font-size: 2.2rem;
+}
+
+main .features .features-wrapper .features-box .features-box-text {
+  display: flex;
+  margin: 2rem 0;
+}
+
+main .features .features-wrapper #problems {
+  background-color: #1c342c;
+  flex: 1 1 50%;
+}
+
+main .features .features-wrapper #problems .features-box-text p {
+  font-size: 1.8rem;
+  text-align: left;
+  color: #a9cd9e;
+  font-family: codecLight;
+}
+
+main .features .features-wrapper #solutions {
+  flex: 1 1 50%;
+  background-color: #5dbb5d;
+  text-align: right;
+}
+
+main .features .features-wrapper #solutions .features-box-text {
+  display: flex;
+  justify-content: right;
+}
+
+main .features .features-wrapper #solutions .features-box-text p {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #1c342c;
+  font-family: codecLight;
+}
+
+footer {
+  padding: 8rem 0;
+}
+
+footer h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 6rem;
+  font-family: lemonLight;
+}
+
+footer .contact-wrapper {
+  display: flex;
+  padding: 0 30%;
+  flex-wrap: wrap;
+}
+
+footer .contact-wrapper .contact-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+footer .contact-wrapper .contact-row p {
+  font-family: codec;
+  font-size: 2rem;
+}
+
+footer .contact-wrapper .contact-row img {
+  width: 2.6rem;
+  margin-right: 2%;
+}
+
+/* Media Queries */
+
+/* Surface */
+@media (max-width: 920px) {
+  /* responsive break points */
+  html {
+    font-size: 70%;
+  }
+}
+
+/* Ipad */
+@media (max-width: 825px) {
+  /* responsive break points */
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Surface Duo */
+@media (max-width: 545px) {
+  /* responsive break points */
+  html {
+    font-size: 45%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 420px) {
+  /* responsive break points */
+  html {
+    font-size: 50%;
+  }
+  header h1 {
     font-size: 6rem;
-    color: #1C342C;
-    text-align: center;
-    margin:10px 0px 0px 0px;
-}
-.header p{
-    font-family: codec;
-    font-size: 2.5rem;
-    text-align: center;
-    margin:0px
-    
-}
-h2{
-    font-family: codec;
-    font-weight: 550;
-    font-size: 3rem;
-    text-align: center;
-}
-h2 .brand{
-    font-family: lemon;
-}
-.about{
-    margin: 100px 0px;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.box{
-    background-color: #1C342C;
-    color: #A9CD9E;
-    width: 700px;
-}
-.box p{
-    font-family: codec;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 0px 45px;
-    margin:20px 0px;
-}
-.features{
-    padding-top: 1%;
-}
-.flex-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-}
-.problem{
-    background-color: #1C342C;
-    width: 500px;
-    height: auto;
-    color: #A9CD9E;
-}
-.solution{
-    background-color: #5DBB5D;
-    width: 500px;
-    height: auto;
-    color: #1C342C;
-}
-h3{
-    font-family: lemon;
-    font-size: 1.5rem;
-    color: white;
-    padding: 3% 0px 0px 3%;
-    margin: 10px 0px;
-}
-ul{
-    padding-left: 10px;
-}
-li{
-    font-family: codec;
-    font-size: 1.5rem;
-    list-style: none;
-    margin: 20px;
-}
-.daun{
-    width: 30px;
-    float: left;
-}
-footer h2{
-    font-family: lemon;
-    font-size: 5rem;
-    margin-bottom: 0px;
-    color: #1C342C;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contact li{
-    font-size: 2.5rem;
-}
-.contact img{
-    width: 50px;
-    float: left;
-}
-.white{
-    color: #FFFFFF;
-}
-.green{
-    color: #5DBB5D;
-}
-@media(max-width:800px){
-    h1{
-        word-wrap: break-word;
-    }
-    .flex-2{
-        flex-direction: column;
-    }
-    footer h2{
-        font-size: 4rem;
-    }
-    .contact li{
-        font-size: 1.5rem;
-    }
-    .contact img{
-        width: 30px;
-    }
-    
+  }
+  main .content {
+    padding: 0 15%;
+  }
+  main .features .features-wrapper {
+    display: block;
+  }
 
+  main .features .features-wrapper .features-box {
+    margin: 5% 0;
+  }
+}
+
+/* Pixel 5 */
+@media (max-width: 395px) {
+  /* responsive break points */
+  html {
+    font-size: 45%;
+  }
 }
