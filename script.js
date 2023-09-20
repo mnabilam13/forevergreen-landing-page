@@ -67,7 +67,14 @@ if (objToRender === "dino") {
 function animate() {
     requestAnimationFrame(animate);
     //Here we could add some code to update the scene, adding some automatic movement
-  
+    
+    //kalo mau otomatis gerakan mouse
+    // if (object && objToRender === "dino") {
+    //     //I've played with the constants here until it looked good 
+    //     object.rotation.y = -2 + mouseX / window.innerWidth * 3;
+    //     object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
+    // }
+
     renderer.render(scene, camera);
 }
 

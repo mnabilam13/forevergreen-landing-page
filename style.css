@@ -83,9 +83,12 @@ main {
   padding: 6rem 7%;
 }
 
+#container3D p{
+  text-align: center;
+  margin-top:1.5rem;
+}
 #container3D canvas{
   margin: 0 auto;
-  margin-top: 20px;
   width: 500px !important;
   height: auto !important;
   top: 0;
