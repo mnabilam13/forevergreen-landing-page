@@ -83,20 +83,33 @@ main {
   padding: 6rem 7%;
 }
 
-#container3D p{
-  text-align: center;
-  margin-top:1.5rem;
+main .content {
+  display: flex;
+  column-gap: 5%;
 }
-#container3D canvas{
+
+main #container3D {
+  border: 0.1rem solid #1c342c;
+  flex: 1 1 50%;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 3% 5% 5% 5%;
+}
+
+main #container3D p {
+  padding-bottom: 5%;
+}
+
+main #container3D canvas {
   margin: 0 auto;
-  width: 500px !important;
+  width: 100% !important;
   height: auto !important;
   top: 0;
   left: 0;
 }
 
-main .content {
-  padding: 0 28%;
+main .content .content-text {
+  flex: 1 1 50%;
 }
 
 main .content .title-content {
@@ -291,6 +304,14 @@ footer .contact-wrapper .contact-row img {
 
   main .features .features-wrapper .features-box {
     margin: 5% 0;
+  }
+
+  main .content {
+    flex-wrap: wrap;
+  }
+  main #container3D canvas {
+    width: 30% !important;
+    height: 80% !important;
   }
 }
 
